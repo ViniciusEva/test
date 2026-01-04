@@ -7,7 +7,7 @@
     $telefone = $_POST ['telefone'];
     $endereco = $_POST ['endereco'];
     $cargo = $_POST ['cargo'];
-    $nivel_acesso = $_POST ['nivel_acesso'];
+    $nivel_acesso = 1;
     $foto = $_POST ['foto'];
     $id_status = 1;
 

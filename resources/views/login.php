@@ -51,13 +51,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Seção do formulário de Cadastro -->
     <div id="cadastroSection" class="form-section hidden">
-        <form id="cadastroForm">
-            <input type="text" id="nomeCadastro" name="nome" placeholder="Nome Completo" required>
-            <input type="text" id="cpfCadastro" name="cpf" placeholder="CPF" required>
-            <input type="date" id="dataNascimentoCadastro" name="data_nascimento" placeholder="Data de Nascimento" required>
-            <input type="email" id="emailCadastro" name="email" placeholder="E-mail" required>
-            <input type="password" id="senhaCadastro" name="senha" placeholder="Senha" required>
-            <input type="password" id="confirmaSenhaCadastro" name="confirma_senha" placeholder="Confirmar Senha" required>
+        <form action="../../app/Controller/cadastros/cadastro_users.php" method="POST" class="form-container">
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+            <input type="date" id="email" name="data_nascimento" placeholder="Data de Nascimento" required>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            <input type="email" id="telefone" name="email" placeholder="E-mail" required>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+            <input type="text" id="cargo" name="cargo" placeholder="cargo" required>
+            <input type="text" id="foto" name="foto" placeholder="Foto (opcional)" >
             
             <div>
                 <button type="submit" id="btn-cadastro">Cadastrar</button>
